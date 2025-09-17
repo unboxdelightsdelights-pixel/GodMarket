@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>God Market | 200+ Instagram Caption Pack</title>
+  <style>
+    body {
+      font-family: "Courier New", monospace;
+      margin: 0; padding: 0;
+      background: #f7f7f7;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #333, #111);
+      color: #0f0; /* green terminal style */
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 3px solid #0f0;
+    }
+    header h1 { font-size: 2.8em; margin: 0; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .hero-img {
+      display: block;
+      max-width: 320px;
+      margin: 20px auto;
+      border: 2px solid #0f0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0f0;
+    }
+
+    .divider {
+      text-align: center;
+      color: #888;
+      margin: 30px 0;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0f0;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features ul li {
+      background: #111;
+      color: #0f0;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      border: 1px dashed #0f0;
+    }
+
+    .payment {
+      text-align: center;
+      padding: 40px 20px;
+      background: #1a1a1a;
+      color: #0f0;
+      border-radius: 12px;
+      margin: 30px 0;
+      border: 2px solid #0f0;
+    }
+    .payment h2 { margin-bottom: 15px; }
+    .upi-id {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #0f0;
+    }
+    .btn {
+      display: inline-block;
+      background: #0f0;
+      color: #111;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1em;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #0c0; }
+
+    .guarantee {
+      text-align: center;
+      margin: 40px 0;
+      font-style: italic;
+      color: #444;
+    }
+
+    footer {
+      background: #111;
+      color: #0f0;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-top: 2px solid #0f0;
+    }
+
+    /* Modal Popup */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #111;
+      color: #0f0;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 400px;
+      border: 2px solid #0f0;
+    }
+    .close {
+      color: #f00;
+      font-size: 20px;
+      float: right;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>God Market</h1>
+    <p>200+ Instagram Caption Pack – Boost Your Engagement 🚀</p>
+  </header>
+
+  <div class="container">
+    <img src="book-mockup.jpg" alt="Caption Pack" class="hero-img">
+
+    <div class="divider">--------------------</div>
+
+    <section class="features">
+      <h2>Why This Pack?</h2>
+      <ul>
+        <li>📌 200+ ready-to-use captions (funny, romantic, motivational, trendy)</li>
+        <li>🚀 Perfect for posts, reels & stories</li>
+        <li>⚡ Instant delivery after payment</li>
+        <li>💡 Save time & grow faster on Instagram</li>
+      </ul>
+    </section>
+
+    <div class="divider">--------------------</div>
+
+    <section class="payment">
+      <h2>Easy Payment – Instant Access</h2>
+      <p>Pay via UPI and get your caption pack instantly 📲</p>
+      <p class="upi-id">UPI ID: 8849729348@ibl</p>
+      <button onclick="copyUPI()" class="btn">📋 Copy UPI ID</button>
+      <br><br>
+      <img src="upi-qr.png" alt="UPI QR Code" width="200"><br>
+      <a href="javascript:void(0)" onclick="openModal()" class="btn">I Have Paid – Get My Download</a>
+    </section>
+
+    <div class="guarantee">
+      💡 7-Day Money Back Guarantee – No Questions Asked
+    </div>
+  </div>
+
+  <footer>
+    © 2025 God Market | Contact: support@godmarket.com
+  </footer>
+
+  <!-- Modal -->
+  <div id="paymentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Download Your Pack</h2>
+      <p>Click below to download your caption pack:</p>
+      <!-- Replace with your file link -->
+      <a href="YOUR_DOWNLOAD_LINK_HERE" class="btn">⬇ Download Now</a>
+    </div>
+  </div>
+
+  <script>
+    function copyUPI() {
+      navigator.clipboard.writeText("8849729348@ibl");
+      alert("UPI ID copied!");
+    }
+    function openModal() {
+      document.getElementById("paymentModal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("paymentModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
